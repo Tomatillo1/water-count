@@ -1,25 +1,62 @@
+@font-face {
+    font-family: AppleBerry;
+    src: url("font/appleberry.ttf");
+}
+
 body {
     margin: 0;
     height: 100svh;
-    background-color: black;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .section {
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 25%;
-    gap: 1rem;
-    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 400px;
+    background-image: url("images/visuel compteur 330x400.jpeg");
+    gap: 0.5rem;
+    padding-top: 3rem;
+    background-repeat: no-repeat;
 }
 
-h1, .quantity {
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
+h2, p, .number, .number2 {
     margin: 0;
+}
+
+h2 {
+    text-align: center;
+    width: 85%;
+    font-size: 1.5rem;
+}
+
+.texteAround, h2 {
+    color: #956939;
+}
+
+.quantity1, .quantity2 {
+    color: #268f87;
+    font-size: 2.5rem;
+}
+
+.texteAround, h2, .quantity1, .quantity2 {
+    font-family: AppleBerry, sans-serif;
+}
+
+.texteAround {
+    font-size: 1rem;
+    text-align: end;
+}
+
+.numberBackground {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    background-image: url("/images/cadre-dégradé.jpeg");
+    width: 80%;
+    background-repeat: no-repeat;
+    padding: 0.5rem 1rem 0.5rem 0;
 }
